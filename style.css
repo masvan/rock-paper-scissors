@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Heading */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Images of Rock, Paper, and Scissors */
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choices img {
+    max-width: 30%;
+    padding: 100px 30px;
+}
+
+.computerImage {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
