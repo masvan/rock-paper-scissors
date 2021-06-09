@@ -4,7 +4,8 @@
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<script src="app.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<script src="app.js" defer></script>
 <body>
 
 <div class="header">
@@ -13,13 +14,29 @@
 </div>
 
 <div class="choices">
-    <img class="youImage" src="img/paper-user.png" alt="">
-    <img class="computerImage" src="img/scissors-user.png" alt="">
+    <img id="youimagereplace" class="youImage animation" src="img/scissors-user.png" alt="">
+    <img id="computerimagereplace" class="computerImage animation" src="img/scissors-user.png" alt="">
+</div>
+
+<div class="chooseyourweapon">
+    <p id="roundresult">Choose Your Weapon. First to 5 Wins!</p>
 </div>
 
 <div class="score">
-    <p>You: 1</p>
-    <p>Computer: 2</p>
+    <div class="youdiv">
+        <p>You</p>
+        <p id="youscorereplace">0</p>
+    </div>
+    <div class="computerdiv">
+        <p>Computer</p>
+        <p id="computerscorereplace">0</p>
+    </div>
+</div>
+
+<div class="buttons">
+    <button onclick="displayRockButton();" id="rockchoice">Rock</button>
+    <button onclick="displayPaperButton();" id="paperchoice">Paper</button>
+    <button onclick="displayScissorsButton();" id="scissorschoice">Scissors</button>
 </div>
 
 </body>

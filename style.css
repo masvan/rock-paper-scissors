@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     border: 0;
+    background-color: black;
+}
+
+body {
+    font-family: Roboto;
+    color: white;
 }
 
 /* Heading */
@@ -22,8 +28,8 @@
 }
 
 .choices img {
-    max-width: 30%;
-    padding: 100px 30px;
+    height: 170px;
+    padding: 50px 30px;
 }
 
 .computerImage {
@@ -31,4 +37,106 @@
     transform: scaleX(-1);
 }
 
+.animation {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
+/* Choose Your Weapon */
+
+.chooseyourweapon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+/* Score */
+
+.score {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.score p {
+    padding: 20px;
+}
+
+.youdiv {
+    border: 1px solid rgb(111, 226, 255);
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.computerdiv {
+    border: 1px solid rgb(111, 226, 255);
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+
+button {
+    background-color: #F15644;
+    border: none;
+    padding: 15px 32px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #a0372b;
+    transition: all .2s ease;
+}
